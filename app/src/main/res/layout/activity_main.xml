@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    tools:context="com.androidbolivia.studyjampartica1.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/futurama"
+        android:scaleType="centerCrop"
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        android:fontFamily="verdana"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Futurama" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1994 TV-14 155 Episodios"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:fontFamily="verdana"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+            <RatingBar
+                android:layout_width="206dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Ver capitulos"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:fontFamily="verdana"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:fontFamily="verdana"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Serie de TV (1999-2003. 2010-2013). 7 temporadas. 140 episodios. Serie de animación creada por Matt Groening (creador también de Los Simpson) y David X. Cohen (guionista también de Los Simpson). Ambientada en la ciudad de Nueva Nueva York en el año 3000, la serie comienza con Philip J. Fry, un joven repartidor de pizza neoyorquino fracasado y desmotivado que es criogénicamente congelado por accidente la Nochevieja de 1999. Mil años después es descongelado, encontrándose en Nueva Nueva York el 31 de diciembre de 2999. El intento de Fry por escapar de la entonces obligatoria asignación laboral como repartidor termina cuando es contratado en Planet Express, una pequeña compañía de mensajería intergaláctica propiedad de su sobrino lejano, como repartidor. La serie trata sobre las aventuras de Fry y sus colegas cuando viajan por el universo haciendo repartos para Planet Express. (FILMAFFINITY)" />
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:fontFamily="verdana"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Director: Matt Groening (Creator), Peter Avanzino, Bret Haaland, Gregg Vanzo, Ron Hughart, Brian Sheesley, Crystal Chesney, Frank Marino, Raymie Muzquiz, Stephen Sandoval, Susie Dietter, Mark Ervin, Dwayne Carey-Hill"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:fontFamily="verdana"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Productora: Emitida por la cadena FOX / Comedy Central; The Curiosity Company / 20th Century Fox Television"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="1. Episodio 1"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:fontFamily="verdana"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_weight="0.98"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="2. Episodio 2"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:fontFamily="verdana"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_weight="0.86"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
